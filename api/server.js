@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
 const axios = require("axios");
-const User = require("./models/User");
+const User = require("../models/User");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
