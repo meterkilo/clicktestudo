@@ -1,0 +1,78 @@
+/* Add Comic Sans font */
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
+body {
+    font-family: "Comic Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container,
+.clicker-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.welcome-message,
+h2,
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-image {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cookie-image:hover {
+    transform: scale(1.1);
+}
+
+.joke {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    max-width: 300px;
+}

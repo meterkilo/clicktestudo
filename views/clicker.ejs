@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles.css" />
+        <title>Cookie Clicker</title>
+    </head>
+    <body>
+        <div class="joke">
+            <h3>Joke of the click &#128514:</h3>
+            <p><strong>Setup:</strong> <%= joke.setup %></p>
+            <p><strong>Punchline:</strong> <%= joke.punchline %></p>
+        </div>
+        <div class="container">
+            <h1>Welcome, <%= username %>!</h1>
+            <h2>Your Testudo Count: <%= cookieCount %></h2>
+            <form action="/click" method="POST">
+                <input type="hidden" name="username" value="<%= username %>" />
+                <button type="submit" class="cookie-button">
+                    <img src="/cookie.jpg" alt="Click the Testudo" class="cookie-image" />
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
