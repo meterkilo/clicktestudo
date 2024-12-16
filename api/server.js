@@ -18,8 +18,7 @@ mongoose
         "mongodb+srv://matthew27888:123@cluster0.xrw8q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         { useNewUrlParser: true, useUnifiedTopology: true }
     )
-    .then(() => console.log("Connected to MongoDB"))
-    .catch((err) => console.error("MongoDB connection error:", err));
+    .then(() => console.log("Connected to MongoDB"));
 
 app.get("/", (req, res) => {
     res.render("login");
